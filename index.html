@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <a href="#"><img src="/Logo.png" alt="logo" /></a>
+      </nav>
+      <h1>Todo List</h1>
+    </header>
+
+    <main class="container">
+      <form>
+        <input required class="input_text" type="text" />
+        <button class="add" type="submit">
+          <i class="fa-sharp fa-solid fa-square-plus"></i>
+        </button>
+        <select name="todos" id="filter">
+          <option value="All">All</option>
+          <option value="Completed">Completed</option>
+          <option value="Uncompleted">Uncompleted</option>
+        </select>
+        <div><p id="required" class="noEmpty_input">Required</p></div>
+      </form>
+      <div class="container__todo">
+        <ul class="container__todo__list"></ul>
+      </div>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
